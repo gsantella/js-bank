@@ -1,4 +1,3 @@
-import RandomNumber from "./playground/guido/RandomNumber";
 import SheenaComponent1 from "./playground/sheena/Component1";
 import SheenaComponent2 from "./playground/sheena/Component2";
 import SheenaComponent3 from "./playground/sheena/Component3";
@@ -7,6 +6,8 @@ import BradleyComponent2 from "./playground/bradley/Component2";
 import BradleyComponent3 from "./playground/bradley/Component3";
 import GuidoComponent1 from "./playground/guido/Component1";
 import GuidoComponent2 from "./playground/guido/Component2";
+import GuidoComponent3 from "./playground/guido/Component3";
+import RandomNumber from "./playground/guido/RandomNumber";
 
 export default function Playground() {
   return (
@@ -59,13 +60,18 @@ export default function Playground() {
         </article>
 
         <article>
-          <header>Guido Component 1</header>
+          <header>Guido Component 2</header>
           <GuidoComponent2 /> 
         </article>
 
         <article>
           <header>Random Number Component</header>
           <RandomNumber/> 
+        </article>
+
+        <article>
+          <header>Guido Component 3</header>
+          <GuidoComponent3 /> 
         </article>
 
       </div>
