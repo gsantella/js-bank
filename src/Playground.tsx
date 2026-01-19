@@ -1,9 +1,9 @@
 import SheenaComponent1 from "./playground/sheena/Component1";
 import SheenaComponent2 from "./playground/sheena/Component2";
 import SheenaComponent3 from "./playground/sheena/Component3";
-import BradleyComponent1 from "./playground/bradley/Component1";
-import BradleyComponent2 from "./playground/bradley/Component2";
-import BradleyComponent3 from "./playground/bradley/Component3";
+import DepositComponent from "./playground/bradley/DepositComponent";
+import GetAccountComponent from "./playground/bradley/GetAccountComponent";
+import WithdrawComponent from "./playground/bradley/WithdrawComponent";
 import GuidoComponent1 from "./playground/guido/Component1";
 import GuidoComponent2 from "./playground/guido/Component2";
 import GuidoComponent3 from "./playground/guido/Component3";
@@ -38,17 +38,17 @@ export default function Playground() {
 
         <article>
           <header>Bradley Component 1</header>
-          <BradleyComponent1/> 
+          <GetAccountComponent/> 
         </article>
 
         <article>
           <header>Bradley Component 2</header>
-          <BradleyComponent2/> 
+          <DepositComponent/> 
         </article>
 
         <article>
           <header>Bradley Component 3</header>
-          <BradleyComponent3/> 
+          <WithdrawComponent/> 
         </article>
 
       </div>
