@@ -1,6 +1,11 @@
+import { useState } from "react";
 import SheenaComponent1 from "./playground/sheena/Component1";
 import SheenaComponent2 from "./playground/sheena/Component2";
 import SheenaComponent3 from "./playground/sheena/Component3";
+import BankAccounts from "./playground/sheena/Component1";
+import Pending from "./playground/sheena/Pending";
+import NewUser from "./playground/sheena/NewUser";
+import UpdateUser from "./playground/sheena/UpdateUser";
 import BradleyComponent1 from "./playground/bradley/Component1";
 import BradleyComponent2 from "./playground/bradley/Component2";
 import BradleyComponent3 from "./playground/bradley/Component3";
@@ -10,29 +15,49 @@ import GuidoComponent3 from "./playground/guido/Component3";
 import RandomNumber from "./playground/guido/RandomNumber";
 
 export default function Playground() {
+  //  Add balances state here
+  const [balances, setBalances] = useState({
+    savings: 2450.75,
+    checking: 820.32,
+  });
+
   return (
     <>
-    <h1>Playground</h1>
-    <div className="grid">
-      
-      <div>Sheena
+      <h1>Playground</h1>
+      <div className="grid">
+        <div>Sheena
+          <article>
+            <header>Admin Component</header>
+            <BankAccounts /> 
+          </article>
 
-        <article>
-          <header>Sheena Component 1</header>
-          <SheenaComponent1/> 
-        </article>
+          <article>
+            <header>User Component</header>
+            {/* Render as JSX and pass balances */}
+            <SheenaComponent2 balances={balances} />
+          </article>
 
-        <article>
-          <header>Sheena Component 2</header>
-          <SheenaComponent2/> 
-        </article>
+          <article>
+            <header>User Transfer Comp</header>
+            {/* Render as JSX and pass balances + setBalances */}
+            <SheenaComponent3 balances={balances} setBalances={setBalances} />
+          </article>
 
-        <article>
-          <header>Sheena Component 3</header>
-          <SheenaComponent3/>  
-        </article>
+          <article>
+            <header>Pending Withdrawals</header>
+            <Pending />  
+          </article>
 
-      </div>
+          <article>
+            <header>New User Lay</header>
+            <NewUser />  
+          </article>
+
+          <article>
+            <header>Update user Lay</header>
+            <UpdateUser />  
+          </article>
+        </div>
       <div>Bradley
 
 

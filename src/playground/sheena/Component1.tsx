@@ -1,7 +1,13 @@
-export default function SheenaComponent1() {
+export default function BankAccounts() {
   return (
     <>
-      <p>Fill me in</p>
+      <p>Total Users</p>
+      <p>New User Comp Placeholder</p>
+      <p>Delete Placeholder</p>
+      <p> Update User Placeholder</p>
+      <p>Search bar/text box
+      <p>Submit button for Search</p>
+      </p>
     </>
   );
 }
