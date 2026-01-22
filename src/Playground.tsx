@@ -17,6 +17,11 @@ import GuidoComponent1 from "./playground/guido/Component1";
 import GuidoComponent2 from "./playground/guido/Component2";
 import GuidoComponent3 from "./playground/guido/Component3";
 import RandomNumber from "./playground/guido/RandomNumber";
+import GetAllAccounts from "./playground/bradley/GetAllAccountsComponent";
+import CreateAccountComponent from "./playground/bradley/CreateAccountComponent";
+import GetBankBalance from "./playground/bradley/GetBankBalanceComponenet";
+import GetUserAccountsComponent from "./playground/bradley/GetUserAccountsComponent";
+import DeleteAccount from "./playground/bradley/DeleteAccountComponent";
 
 export default function Playground() {
   //  Add balances state here
@@ -96,6 +101,33 @@ export default function Playground() {
           <header>Bradley Component 3</header>
           <WithdrawComponent/> 
         </article>
+
+        <article>
+          <header>Bradley Component 4</header>
+          <GetAllAccounts/> 
+        </article>
+
+        <article>
+          <header>Bradley Component 5</header>
+          <CreateAccountComponent/>
+        </article>
+
+        <article>
+          <header>Bradley Component 6</header>
+          <GetBankBalance/>
+        </article>
+
+        <article>
+          <header>Bradley Component 7</header>
+          <GetUserAccountsComponent/>
+        </article>
+        
+        <article>
+          <header>Bradley Component 8</header>
+          <DeleteAccount/>
+        </article>
+        
+
 
       </div>
       <div>Guido
