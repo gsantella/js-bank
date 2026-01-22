@@ -3,14 +3,15 @@ import { useState } from "react"
 
 export default function DeleteAccount() {
     
-        const urlBase = "https://695f03af7f037703a8128fbf.mockapi.io/api/v1/Account"
-        let [accountID, setAccountID] = useState("")
+        const urlBase = "https://695f03af7f037703a8128fbf.mockapi.io/api/v1/AccountHolder/"
+        let [accountHolderID, setAccountHolderID] = useState("")
 
         var useDelete = async function () {
             
-            await fetch(urlBase+"/"+accountID, {
-                method: "DELETE"
-            }) 
+            await fetch(urlBase+Number(accountHolderID), {
+                method: "DELETE",
+                headers: {'content-type': 'application/json'}
+            })
         }
 
     return(
@@ -18,8 +19,8 @@ export default function DeleteAccount() {
         <p>Delete an account</p>
         <input
             placeholder="Enter Account ID"
-            value={accountID}
-            onChange={(e) => {setAccountID(e.target.value)}}
+            value={accountHolderID}
+            onChange={(e) => {setAccountHolderID(e.target.value)}}
         ></input>
         
         <button
