@@ -6,9 +6,13 @@ import BankAccounts from "./playground/sheena/Component1";
 import Pending from "./playground/sheena/Pending";
 import NewUser from "./playground/sheena/NewUser";
 import UpdateUser from "./playground/sheena/UpdateUser";
-import BradleyComponent1 from "./playground/bradley/Component1";
-import BradleyComponent2 from "./playground/bradley/Component2";
-import BradleyComponent3 from "./playground/bradley/Component3";
+import Withdrawal from "./playground/sheena/Withdrawal";
+import DeleteAccounts from "./playground/sheena/Delete";
+import CreateJointAccount from "./playground/sheena/JointAccount";
+import AccountPage from "./playground/sheena/AccountPage";
+import DepositComponent from "./playground/bradley/DepositComponent";
+import GetAccountComponent from "./playground/bradley/GetAccountComponent";
+import WithdrawComponent from "./playground/bradley/WithdrawComponent";
 import GuidoComponent1 from "./playground/guido/Component1";
 import GuidoComponent2 from "./playground/guido/Component2";
 import GuidoComponent3 from "./playground/guido/Component3";
@@ -27,12 +31,12 @@ export default function Playground() {
       <div className="grid">
         <div>Sheena
           <article>
-            <header>Admin Component</header>
+            <header>Seaarch Component</header>
             <BankAccounts /> 
           </article>
 
           <article>
-            <header>User Component</header>
+            <header>Deposit Component</header>
             {/* Render as JSX and pass balances */}
             <SheenaComponent2 balances={balances} />
           </article>
@@ -56,6 +60,23 @@ export default function Playground() {
           <article>
             <header>Update user Lay</header>
             <UpdateUser />  
+          </article>\
+          
+          <article>
+            <header>Withdrawal Lay</header>
+            <Withdrawal/>  
+          </article>
+            <article>
+            <header>Delete Lay</header>
+            <DeleteAccounts/>  
+          </article>
+          <article>
+          <header>JointAccount Lay</header>
+            <CreateJointAccount/>  
+          </article>
+            <article>
+          <header>Totals Lay</header>
+            <AccountPage/>  
           </article>
         </div>
       <div>Bradley
@@ -63,17 +84,17 @@ export default function Playground() {
 
         <article>
           <header>Bradley Component 1</header>
-          <BradleyComponent1/> 
+          <GetAccountComponent/> 
         </article>
 
         <article>
           <header>Bradley Component 2</header>
-          <BradleyComponent2/> 
+          <DepositComponent/> 
         </article>
 
         <article>
           <header>Bradley Component 3</header>
-          <BradleyComponent3/> 
+          <WithdrawComponent/> 
         </article>
 
       </div>
