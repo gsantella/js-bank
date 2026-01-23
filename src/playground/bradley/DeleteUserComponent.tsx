@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 
-export default function DeleteAccount() {
+export default function DeleteUser() {
     
         const urlBase = "https://695f03af7f037703a8128fbf.mockapi.io/api/v1/AccountHolder/"
         let [accountHolderID, setAccountHolderID] = useState("")
@@ -16,9 +16,9 @@ export default function DeleteAccount() {
 
     return(
         <>
-        <p>Delete an account</p>
+        <p>Delete an Account Holder</p>
         <input
-            placeholder="Enter Account ID"
+            placeholder="Enter AccountHolderId ID"
             value={accountHolderID}
             onChange={(e) => {setAccountHolderID(e.target.value)}}
         ></input>

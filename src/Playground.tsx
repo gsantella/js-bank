@@ -21,7 +21,7 @@ import GetAllAccounts from "./playground/bradley/GetAllAccountsComponent";
 import CreateAccountComponent from "./playground/bradley/CreateAccountComponent";
 import GetBankBalance from "./playground/bradley/GetBankBalanceComponenet";
 import GetUserAccountsComponent from "./playground/bradley/GetUserAccountsComponent";
-import DeleteAccount from "./playground/bradley/DeleteAccountComponent";
+import DeleteUser from "./playground/bradley/DeleteUserComponent";
 
 export default function Playground() {
   //  Add balances state here
@@ -124,7 +124,7 @@ export default function Playground() {
         
         <article>
           <header>Bradley Component 8</header>
-          <DeleteAccount/>
+          <DeleteUser/>
         </article>
         
 
